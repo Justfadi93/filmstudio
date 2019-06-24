@@ -1,0 +1,28 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+{#ginja template#}
+
+    <h1 style="text-align: center"> GET & POST Usage using django</h1>
+
+<h1>Addition form</h1>
+
+    <form action="add" method="post">
+
+    {% csrf_token %}
+
+    Enter First Number: <input type="text" name="num1">
+    Enter Second Number: <input type="text" name="num2">
+<button type="submit"> Result</button>
+    </form>
+
+
+    <h2>Deletion form</h2>
+<form action="delete">
+    Enter First Number: <input type="text" name="num1">
+    Enter Second Number: <input type="text" name="num2">
+<button type="submit"> Result</button>
+    </form>
+
+{% endblock %}

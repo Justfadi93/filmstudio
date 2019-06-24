@@ -1,0 +1,505 @@
+{%  extends 'Front-Site/base.html' %}
+{% load static %}
+{% block content %}
+    {% static 'media' as Baseurl %}
+
+
+
+
+
+	<!-- Page Content Start -->
+			<div class="page-content">
+				<!-- Recent Upload Area Strat -->
+				<section class="tailer-area bg-white pt-90 indicator-style-two">
+					<div class="container">
+						<div class="row">
+							<!-- Section Titel -->
+							<div class="col-md-12">
+								<div class="section-titel style-3 text-left">
+									<h2>Design</h2>
+									<p>It is a long established fact that a reader will be distracted readable </p>
+								</div>
+							</div>
+							<!-- Section Titel -->
+						</div>
+						<!-- Recent Upload Item Area Start -->
+						<div class="main-section">
+							<div class="recent-upload-active owl-carousel owl-theme">
+
+                                {% for des in obj %}
+                                <!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{{ des.image.url}}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="#">{{ des.name }}</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+
+                                {% endfor %}
+
+							</div>
+						</div>
+						<!-- Recent Upload Item Area End -->
+					</div>
+				</section>
+				<!-- Recent Upload Area End -->
+				<!-- Latest Tailer Area Strat -->
+				<section class="latest-tailer-area bg-white pt-90 pb-100 indicator-style-two">
+					<div class="container">
+						<div class="row">
+							<!-- Section Titel -->
+							<div class="col-md-12">
+								<div class="section-titel style-3 text-left">
+									<h2>Post <span>Production</span></h2>
+									<p>It is a long established fact that a reader will be distracted readable </p>
+								</div>
+							</div>
+							<!-- Section Titel -->
+						</div>
+						<!-- Latest Trailer Item Area Start -->
+						<div class="latest-trailer-main">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="trailer-left-area slider slider-for-team">
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-1.jpg' %}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="{% static 'img/home-video/play-arrow.png'%}" alt="">
+											</a>
+										</div>
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-2.jpg' %}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="{% static 'img/home-video/play-arrow.png'%}" alt="">
+											</a>
+										</div>
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-3.jpg'%}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="img/home-video/play-arrow.png" alt="">
+											</a>
+										</div>
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-4.jpg'%}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="{% static 'img/home-video/play-arrow.png'%}" alt="">
+											</a>
+										</div>
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-5.jpg' %}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="{% static 'img/home-video/play-arrow.png'%} " alt="">
+											</a>
+										</div>
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-3.jpg' %}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="{% static 'img/home-video/play-arrow.png' %}" alt="">
+											</a>
+										</div>
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-2.jpg' %}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="{% static 'img/home-video/play-arrow.png' %}" alt="">
+											</a>
+										</div>
+										<div class="slick-left-thumb">
+											<img src="{% static 'img/home-video/latest-trailer/left-4.jpg' %}" alt="">
+											<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+												<img src="{% static 'img/home-video/play-arrow.png' %}" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="trailer-right-area slider slider-nav-team">
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-1.jpg' %}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>THE LIFE OF AMAZONN</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-2.jpg' %}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>WAR OF OUR SOULS</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-3.jpg' %}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>DARK IN THE FOREST</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-4.jpg' %}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>IN THE MOON</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-5.jpg' %}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>AROUND OF THE DREAM</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-3.jpg'%}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>THE FLY OF AMAZOON</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-2.jpg'%}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>DARK IN THE FOREST</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+										<div class="traier-nav-thumb-area">
+											<div class="trailer-thumb-single mb-10">
+												<div class="trailer-thumb">
+													<img src="{% static 'img/home-video/latest-trailer/right-4.jpg' %}" alt="">
+												</div>
+												<div class="trailer-content">
+													<h6>IN THE MOON</h6>
+													<span>3.40 sc</span>
+													<span>7.8 rat</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Latest Trailer Item Area End -->
+						</div>
+					</div>
+				</section>
+				<!-- Latest Tailer Area End -->
+				<!-- Most Popular Area Strat -->
+				<section class="tailer-area bg-white pb-90 indicator-style-two">
+					<div class="container">
+						<div class="row">
+							<!-- Section Titel -->
+							<div class="col-md-12">
+								<div class="section-titel style-3 text-left">
+									<h2> Events <span></span></h2>
+									<p>It is a long established fact that a reader will be distracted readable </p>
+								</div>
+							</div>
+							<!-- Section Titel -->
+						</div>
+						<!-- Most Popular Item Area Start -->
+						<div class="main-section">
+							<div class="recent-upload-active owl-carousel owl-theme">
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/5.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="#">Heaven Of life</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/6.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="#">Future of Children</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/7.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Blind Love</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/2.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="#">A new world</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/9.jpg'%}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="#">Enter the sea</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+							</div>
+						</div>
+						<!-- Most Popular Item Area End -->
+					</div>
+				</section>
+				<!-- Most Popular Area End -->
+				<!-- Banner Area Strat -->
+				<div class="banner-area pb-90">
+					<div class="container">
+						<div class="row">
+							<!-- Section Titel -->
+							<div class="col-md-12">
+								<div class="banner-image">
+									<img src="{% static 'img/home-video/banner/1.jpg' %}" alt="">
+								</div>
+							</div>
+							<!-- Section Titel -->
+						</div>
+					</div>
+				</div>
+				<!-- Banner Area End -->
+				<!-- Award Winner Area Strat -->
+				<section class="tailer-area bg-white pb-90 indicator-style-two">
+					<div class="container">
+						<div class="row">
+							<!-- Section Titel -->
+							<div class="col-md-12">
+								<div class="section-titel style-3 text-left">
+									<h2>Creative <span></span></h2>
+									<p>It is a long established fact that a reader will be distracted readable </p>
+								</div>
+							</div>
+							<!-- Section Titel -->
+						</div>
+						<!-- Most Popular Item Area Start -->
+						<div class="main-section">
+							<div class="recent-upload-active owl-carousel owl-theme">
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/8.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">JOURNEY BY BOAT</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/9.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Enter the sea</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/10.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">THE MINDS OF KIDS</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/11.jpg'%}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">FLY TO DIE</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/trailer/6.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Future Of Children</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+							</div>
+						</div>
+						<!-- Award Winner Item Area End -->
+					</div>
+				</section>
+				<!-- Award Winner Area End -->
+				<!-- Latset Production Area Strat -->
+				<section class="tailer-area bg-white pb-90 indicator-style-two">
+					<div class="container">
+						<div class="row">
+							<!-- Section Titel -->
+							<div class="col-md-12">
+								<div class="section-titel style-3 text-left">
+									<h2>Animations <span></span></h2>
+									<p>It is a long established fact that a reader will be distracted readable </p>
+								</div>
+							</div>
+							<!-- Section Titel -->
+						</div>
+						<!-- Latset Production Item Area Start -->
+						<div class="main-section">
+							<div class="recent-upload-active owl-carousel owl-theme">
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/media/1.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Out of relation</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/media/2.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Revenge of Blood</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/media/3.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Future children</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/media/4.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Journey by boat</a> <span>3.45</span> </h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+								<!-- Single Item -->
+								<div class="trailer-single">
+									<div class="trailer-img">
+										<img src="{% static 'img/home-video/media/5.jpg' %}" alt="">
+										<a href="www.youtube.com/watch1e86?v=TLnmb07WQ-s" class="popup-youtube">
+											<i class="icofont icofont-play-alt-2"></i>
+										</a>
+									</div>
+									<div class="trailer-titel">
+										<h5><a href="movie-details.html">Simply Dummy</a> <span>3.45</span></h5>
+									</div>
+								</div>
+								<!-- Single Item -->
+							</div>
+						</div>
+						<!-- Latset Production Item Area End -->
+					</div>
+				</section>
+				<!-- Latset Production Area End -->
+
+			</div>
+			<!-- Page Content End -->
+
+{% endblock %}
